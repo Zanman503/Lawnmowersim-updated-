@@ -313,7 +313,6 @@ function updateMoney(){
 
 
 function addFields(){
-    fields.push(new Area("Ant", 0, 1, (69,59,50), [0,130,0], "rgb(255,0,0)", 0, "Total Food Founded: ", 1, "Ant", "Wow im tiny?")); 
     fields.push(new Area("Grass", 0, 1, [0,210,0], [0,130,0], "rgb(255,0,0)", 0, "Total Grass Mowed: ", 1, "Lawnmower", "Wow this lawn grows fast.")); 
     fields.push(new Area("Dirt", 0.15, 10, [175, 175, 175], [122, 96, 0], "rgb(68, 130, 206)", 100000, "Total Dirt Vacuumed: ", 5, "Vacuum", "Vroom, vroom"));
     fields.push(new Area("Weed", 0.25, 50, [239, 233, 112], [145,233,124], "rgb(255,127,0)", 1000000, "Total Weeds Whacked: ", 20, "Weed Whacker", "Good thing you don't need to keep replacing the trimming stuff."));
