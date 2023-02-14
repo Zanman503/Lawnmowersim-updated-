@@ -39,6 +39,8 @@ var mowerSizeMultiplier = 1.5;
 var tileSizeMultiplier = 3.5;
 var currentlyPrestiging = false;
 
+alert("V1.2.1A");
+
 function Area(name, multiplierBuff, initialBuff, baseColor, grownColor, machineColor, unlockPrice, message, value, machineName, hmm){
     
     this.baseColor = baseColor;
