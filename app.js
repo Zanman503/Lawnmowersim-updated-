@@ -3,8 +3,8 @@ window.onload = setup;
 var width = 500;
 var height = 500;
 
-var money = 10000000;
-var totalMoney = 100000000;
+var money = 0;
+var totalMoney = 0;
 
 var canvas;
 var ctx;
@@ -26,11 +26,11 @@ var unlockedFields = 1;
 
 var growthBasePrice = 10;
 
-var speedBasePrice = 50;
-var sizeBasePrice = 75;
-var tileBasePrice = 150;
+var speedBasePrice = 25;
+var sizeBasePrice = 70;
+var tileBasePrice = 120;
 
-var tickBasePrice = 5;
+var tickBasePrice = 1;
 
 var growthRateMultiplier = 1.2;
 var tickBaseMultiplier = 1.2;
