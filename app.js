@@ -3,8 +3,8 @@ window.onload = setup;
 var width = 500;
 var height = 500;
 
-var money = 0;
-var totalMoney = 0;
+var money = 10000000000000000000000000000000000000000;
+var totalMoney = 100000000000000000000000000000000000;
 
 var canvas;
 var ctx;
@@ -316,6 +316,7 @@ function updateMoney(){
 
 function addFields(){
     fields.push(new Area("Wheat", 0, 1, [0,210,0], [0,130,0], "rgb(255,0,0)", 0, "Total Wheat harvested: ", 1, "Reaper", "Wow this Field grows fast.")); 
+    fields.push(new Area("Corn", 0, 1, [0, 179, 0], [159, 245, 0], "rgb(255,0,0)", 0, "Total Wheat harvested: ", 1, "Reaper", "Wow this Field grows fast.")); 
  
 }
 
