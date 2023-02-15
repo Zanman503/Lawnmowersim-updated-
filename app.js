@@ -315,7 +315,7 @@ function updateMoney(){
 
 
 function addFields(){
-    fields.push(new Area("Grass", 0, 1, [0,210,0], [0,130,0], "rgb(255,0,0)", 0, "Total Grass Mowed: ", 1, "Lawnmower", "Wow this lawn grows fast.")); 
+    fields.push(new Area("Grass", 0, 1, [0,210,0], [0,130,0], "rgb(255,0,0)", 0, "Total Wheat harvested: ", 1, "Reaper", "Wow this Field grows fast.")); 
  
 }
 
