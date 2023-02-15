@@ -316,7 +316,7 @@ function updateMoney(){
 
 function addFields(){
     fields.push(new Area("Wheat", 0, 1, [0,210,0], [0,130,0], "rgb(255,0,0)", 0, "Total Wheat harvested: ", 1, "Reaper", "Wow this Field grows fast.")); 
-    fields.push(new Area("Corn", 0, 1, [0, 179, 0], [159, 245, 0], "rgb(255,0,0)", 0, "Total Wheat harvested: ", 1, "Reaper", "Wow this Field grows fast.")); 
+    fields.push(new Area("Corn", 0, 1, [0, 179, 0], [159, 245, 0], "rgb(255,0,0)", 0, "Total Corn harvested: ", 1, "Mechinacal Reaper", "Wow this Corn grows fast.")); 
  
 }
 
