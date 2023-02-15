@@ -3,8 +3,8 @@ window.onload = setup;
 var width = 500;
 var height = 500;
 
-var money = 10000000000000000000000000000000000000000;
-var totalMoney = 100000000000000000000000000000000000;
+var money = 0;
+var totalMoney = 0;
 
 var canvas;
 var ctx;
