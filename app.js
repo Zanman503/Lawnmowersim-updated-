@@ -50,9 +50,9 @@ function Area(name, multiplierBuff, initialBuff, baseColor, grownColor, machineC
     this.upgrades = [
         new Upgrade("machineSpeed", speedBasePrice*initialBuff, mowerRateMultiplier+multiplierBuff, function(){activeField.machineSpeed++}, "%tpt% tiles/tick", "%name% Speed", function(){return activeField.machineSpeed<20;}),
         new Upgrade("machineSize", sizeBasePrice*initialBuff, mowerSizeMultiplier+multiplierBuff, function(){if(activeField.machineWidth==activeField.machineHeight){activeField.machineWidth++}else{activeField.machineHeight++}activeField.machineX=0;activeField.machineY=0;}, "%w%x%h%", "%name% Size", function(){console.log(activeField.machineHeight + " " + tileSizes[activeField.tileSize]); return activeField.machineHeight < height/tileSizes[activeField.tileSize];}),
-        new Upgrade("tileSize", tileBasePrice*initialBuff, tileSizeMultiplier+multiplierBuff, function(){activeField.tileSize=Math.min(activeField.tileSize+1,tileSizes.length-1);activeField.regenerate();}, "%sz%x%sz%", "Tile Size", function(){return activeField.tileSize < tileSizes.length - 1;}),
-        new Upgrade("growthRate", growthBasePrice*initialBuff, growthRateMultiplier+multiplierBuff, function(){activeField.growthAmount+=2;}, "%gr% growth/tick", "Growth Rate", function(){return activeField.growthAmount<60;}),
-        new Upgrade("tickRate", tickBasePrice*initialBuff, tickBaseMultiplier+multiplierBuff, function(){activeField.tickRate=Math.max(1,Math.floor(activeField.tickRate*0.9));}, "%ms% ms", "Tick Rate", function(){return activeField.tickRate > 4;})
+        new Upgrade("tileSize", tileBasePrice*initialBuff, tileSizeMultiplier+multiplierBuff, function(){activeField.tileSize=Math.min(activeField.tileSize+1,tileSizes.length-1);activeField.regenerate();}, "%sz%x%sz%", "Land Size", function(){return activeField.tileSize < tileSizes.length - 1;}),
+        new Upgrade("growthRate", growthBasePrice*initialBuff, growthRateMultiplier+multiplierBuff, function(){activeField.growthAmount+=2;}, "%gr% growth/tick", "Fertilizer", function(){return activeField.growthAmount<60;}),
+        new Upgrade("tickRate", tickBasePrice*initialBuff, tickBaseMultiplier+multiplierBuff, function(){activeField.tickRate=Math.max(1,Math.floor(activeField.tickRate*0.9));}, "%ms% ms", "Farmers", function(){return activeField.tickRate > 4;})
     ];
     
     this.machineName = machineName;
@@ -315,7 +315,7 @@ function updateMoney(){
 
 
 function addFields(){
-    fields.push(new Area("Grass", 0, 1, [0,210,0], [0,130,0], "rgb(255,0,0)", 0, "Total Wheat harvested: ", 1, "Reaper", "Wow this Field grows fast.")); 
+    fields.push(new Area("Wheat", 0, 1, [0,210,0], [0,130,0], "rgb(255,0,0)", 0, "Total Wheat harvested: ", 1, "Reaper", "Wow this Field grows fast.")); 
  
 }
 
